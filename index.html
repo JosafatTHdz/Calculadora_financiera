@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora Financiera</h2>
+
+        <label for="valor1">Monto</label>
+        <input type="number" id="monto" placeholder="0" required>
+
+        <label for="valor2">Descripción</label>
+        <input type="text" id="desc" placeholder="0" required>
+
+
+        <div class="button-group">
+            <button id="ingreso">Ingreso</button>
+
+            <button id="egreso">Egreso</button>
+        </div>
+
+        <table id="table">
+            <!-- Encabezado de la tabla -->
+            <thead id="table-head">
+                <tr>
+                    <th>Monto</th>
+                    <th>Descripción</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <!-- Cuerpo de la tabla -->
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+
+        <h3>Balance: <span id="balance">0</span></h3>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
+
